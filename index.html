@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
     <title>WeatherPage</title>
 </head>
@@ -18,11 +21,24 @@
     <div class="jumbotron" id="jumbo1">
         <div id="header1">
             <h1>My Weather Page</h1>
+            <p id="currentDay" class="lead"></p>
         </div>
     </div>
     <div class="jumbotron" id="jumbo2">
-        
+        <div class="row">
+            <div class="col-6">
+                <input type="text" class="form-control" id="inputInfo" placeholder="City & State" aria-label="Username"
+                    aria-describedby="addon-wrapping">
+            </div>
+            <div class="col-3">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 

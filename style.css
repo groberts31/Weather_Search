@@ -10,4 +10,11 @@
 #jumbo2 {
     background-color: black;
     color: white;
+    width: auto;
+}
+#searchBtn {
+    background-color: grey;
+    color: black;
+    border-radius: 20px;
+    padding: 3%;
 }
