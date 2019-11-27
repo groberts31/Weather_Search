@@ -20,7 +20,7 @@ $(document).ready(function () {
         var currentTime = moment().format('MMMM Do');
         var inputVal = $("#inputInfo").val();
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + inputVal + "id=524901&APPID=982e2fe78532143c4bbf9987ca2a49cc",
+            url: "http://api.openweathermap.org/data/2.5/weather?q=" + inputVal + "&id=524901&APPID=982e2fe78532143c4bbf9987ca2a49cc",
             method: "GET"
         }).then(function (response) {
             // Logging info given from api after searching
